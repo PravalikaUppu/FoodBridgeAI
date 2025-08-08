@@ -1,21 +1,55 @@
-# Dependencies
-node_modules/
-npm-debug.log
+# ===== Python / Flask =====
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+instance/
 .env
-rasa_env/
-build/
-venv/
-
-# Large file types
-*.zip
-*.h5
-*.pkl
-*.mp4
-*.tar.gz
-*.sqlite
-
-# Build
-build/
-
-# Logs
+.env.*
 *.log
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# ===== Node / React =====
+node_modules/
+build/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ===== Rasa =====
+# Ignore large trained model files
+rasa/models/
+*.tar.gz
+
+# Ignore training cache
+.rasa/
+.rasa_cache/
+.rasa_tmp/
+
+# ===== Docker =====
+# Ignore Docker build cache & volumes
+*.tar
+*.img
+docker-data/
+.docker/
+
+# ===== OS / IDE files =====
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# ===== Large data files =====
+# Skip dataset folders if any
+data/
+datasets/
+uploads/
+static/uploads/
