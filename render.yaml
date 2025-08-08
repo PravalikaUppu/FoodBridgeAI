@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: foodbridge-app
+    env: docker
+    plan: free
+    repo: https://github.com/PravalikaUppu/FoodBridgeAI
+    region: oregon
+    branch: main
+    dockerfilePath: ./Dockerfile
+    buildCommand: ""
+    startCommand: ""
+    autoDeploy: true
