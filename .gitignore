@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+npm-debug.log
+.env
+rasa_env/
+build/
+venv/
+
+# Large file types
+*.zip
+*.h5
+*.pkl
+*.mp4
+*.tar.gz
+*.sqlite
+
+# Build
+build/
+
+# Logs
+*.log
