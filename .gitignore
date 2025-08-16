@@ -29,11 +29,12 @@ yarn-error.log*
 
 # ===== Rasa =====
 # Ignore large trained model files
-rasa/models/
+rasa_bot/models/
 chatbot/models/
 *.tar.gz
 
 # Ignore training cache
+rasa_bot/.rasa/
 .rasa/
 .rasa_cache/
 .rasa_tmp/
@@ -75,6 +76,7 @@ node_modules/
 frontend/node_modules/
 frontend/build/
 frontend/.cache/
+frontend/venv/
 
 # Logs
 *.log
