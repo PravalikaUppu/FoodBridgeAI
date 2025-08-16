@@ -4,11 +4,15 @@ __pycache__/
 *.pyo
 *.pyd
 *.db
+*.sqlite
 *.sqlite3
 instance/
 .env
 .env.*
 *.log
+*.venv
+ENV/
+*.egg-info/
 
 # Virtual environments
 venv/
@@ -26,6 +30,7 @@ yarn-error.log*
 # ===== Rasa =====
 # Ignore large trained model files
 rasa/models/
+chatbot/models/
 *.tar.gz
 
 # Ignore training cache
@@ -53,3 +58,47 @@ data/
 datasets/
 uploads/
 static/uploads/
+
+# Python
+__pycache__/
+*.so
+*.egg-info/
+venv/
+.env/
+
+# Virtual environments
+backend/venv/
+rasa_bot/rasa_env/
+
+# Node.js
+node_modules/
+frontend/node_modules/
+frontend/build/
+frontend/.cache/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large cache
+*.dll
+*.pyd
+*.so
+*.pack
+*.pb
+*.zip
+*.tar
+*.gz
+
+
+# Node / React
+.cache/
+build/
+dist/
+
+# Rasa
+rasa_env/
+models/
